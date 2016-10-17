@@ -1,0 +1,2 @@
+module LuzHelper
+end
