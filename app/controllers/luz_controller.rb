@@ -8,4 +8,8 @@ class LuzController < ApplicationController
     render :home
   end
 
+  def collections
+    render :collections
+  end
+
 end
