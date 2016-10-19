@@ -1,3 +1,90 @@
-// Place all the styles related to the luz controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+#owl-demo .owl-item div{
+  padding:5px;
+}
+#owl-demo .owl-item img{
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* Clip text element */
+.clip-text {
+    font-size: 6em;
+    font-weight: bold;
+    line-height: 0;
+    position: relative;
+    display: inline-block;
+    margin: .5em;
+    padding: .5em .5em;
+    text-align: center;
+    /* Color fallback */
+    color: #fff;
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+.clip-text:before,
+.clip-text:after {
+    position: absolute;
+    content: '';
+}
+
+/* Background */
+.clip-text:before {
+    z-index: -2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: inherit;
+}
+
+/* Text Background (black zone) */
+.clip-text:after {
+    position: absolute;
+    z-index: -1;
+    top: .125em;
+    right: .125em;
+    bottom: .5em;
+    left: .125em;
+    background-color: #000;
+}
+
+/* Change the background position to display letter when the black zone isn't here */
+.clip-text--no-textzone:before {
+    background-position: -.105em 0;
+}
+
+.clip-text--no-textzone:after {
+    content: none;
+}
+
+/* Use Background-size cover for photo background and no-repeat background */
+.clip-text--cover,
+.clip-text--cover:before {
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+            background-size: cover;
+}
+
+.clip-text_one, .clip-p{
+    background-image: url(plazadebolivar.jpg);
+    background-size: contain;
+}
+
+.clip-p {
+  font-size: 36pt;
+}
+
+.container {
+  align-items: center;
+}
+
+.jumbotron {
+  background-color: white;
+  height: 300px;
+}
