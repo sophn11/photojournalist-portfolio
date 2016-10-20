@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
 
-  root "luz#splash"
+  root to: 'luz#splash', as: 'root'
 
-  get "/home", to: "luz#home"
-  get "/collections", to: "luz#collections"
+  get '/home', to: 'luz#home'
+  get '/aboutme', to: 'luz#aboutme'
+  get '/collections', to: 'luz#collections'
 
 end

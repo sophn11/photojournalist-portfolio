@@ -17,7 +17,6 @@
  */
  body, html {
      height: 100%;
-     overflow: hidden;
  }
  #wrapper {
      padding-left: 0;
@@ -37,7 +36,7 @@
      height: 100%;
      margin-left: -250px;
      overflow-y: auto;
-     overflow-x: hidden;
+     overflow-x: auto;
      background: #DB1849;
      -webkit-transition: all 0.5s ease;
      -moz-transition: all 0.5s ease;
@@ -173,7 +172,7 @@
  .clip-text:after {
      position: absolute;
      z-index: -1;
-     top: .15em;
+     top: .5em;
      right: .125em;
      bottom: .5em;
      left: .125em;
@@ -202,10 +201,12 @@
      background-size: auto;
      background-size: cover;
      background-position: top;
+     max-width: auto;
  }
 
  .clip-p {
    font-size: 1.5em;
+   color: black;
  }
 
 
@@ -214,7 +215,7 @@
    height: 100px;
  }
 
- #luztext img{
-   max-height: 28px;
+ .glyphicon img {
+   max-width: 40px;
    width: auto;
  }

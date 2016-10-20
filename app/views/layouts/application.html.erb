@@ -23,21 +23,13 @@
       <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
           <li class="sidebar-brand">
-            <div id="luztext"><%= image_tag("luzelenacastro.png", :alt => "luz") %></div>
+            Luz Castro
           </li>
-          <li> <a href="#">Home</a>
+          <li>  <%= link_to 'Home', '/home'%>
           </li>
-          <li> <a href="#nope" data-toggle="collapse" data-target="#drop1"> Something<span class="caret"></span></a>
-            <ul id="drop1" class="collapse" data-parent="#sideNavParent">
-              <li><a href="about-us">Something</a>
-              </li>
-              <li><a href="our-journey">Something</a>
-              </li>
-              <li><a href="where-we-are-going">Something</a>
-              </li>
-            </ul>
+          <li><%= link_to 'About Me', '/aboutme' %>
           </li>
-          <li><a href="what-we-do">Something</a>
+          <li>  <%= link_to 'Collections', '/collections'%>
           </li>
           <li><a href="the-building">Something</a>
           </li>
@@ -47,16 +39,20 @@
       </div>
       <!-- Page Content -->
       <div id="page-content-wrapper">
-        <a href="#" class="btn btn-default" id="menu-toggle"><span class="glyphicon glyphicon-th-list"></span></a>
       <div class="container-fluid">
           <div class="row">
             <div class="col-lg-12">
+              <a href="" class="btn btn-default" id="menu-toggle">
+                <div class="glyphicon">
+                  <%= image_tag("menu.png", :alt => "menu") %>
+                </div>
+              </a>
               <div class="jumbotron jumbotron-fluid">
                 <div class="container text-center">
-                  <div class="clip-text clip-text_one">LUZ ELENA CASTRO</div>
-                  <div class ="clip-p">
-                    PHOTOJOURNALIST
+                  <div class="clip-text clip-text_one">
+                    LUZ ELENA CASTRO
                   </div>
+                  <div class ="clip-p">PHOTOJOURNALIST</div>
                 </div>
               </div>
               <%= yield %>

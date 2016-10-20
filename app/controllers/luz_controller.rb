@@ -12,4 +12,8 @@ class LuzController < ApplicationController
     render :collections
   end
 
+  def aboutme
+    render :aboutme
+  end
+
 end
