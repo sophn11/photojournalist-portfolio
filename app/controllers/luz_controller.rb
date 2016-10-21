@@ -8,12 +8,20 @@ class LuzController < ApplicationController
     render :home
   end
 
-  def collections
-    render :collections
-  end
-
   def aboutme
     render :aboutme
+  end
+
+  def exhibitions
+    render :exhibitions
+  end
+
+  def photojournalism
+    render :photojournalism
+  end
+
+  def features
+    render :features
   end
 
 end

@@ -37,7 +37,7 @@
      margin-left: -250px;
      overflow-y: auto;
      overflow-x: auto;
-     background: #DB1849;
+     background-image: url(tex.png);
      -webkit-transition: all 0.5s ease;
      -moz-transition: all 0.5s ease;
      -o-transition: all 0.5s ease;
@@ -78,7 +78,7 @@
  .sidebar-nav li a {
      display: block;
      text-decoration: none;
-     color: #ddd;
+     color: black;
  }
  .sidebar-nav li a:hover {
      text-decoration: none;
@@ -137,12 +137,12 @@
 
  /* Clip text element */
  .clip-text {
-     font-size: 3em;
+     font-size: 3.5em;
      font-weight: bold;
      line-height: 0;
      position: relative;
      display: inline-block;
-     margin: .2em;
+     margin: .05em;
      padding: .5em .5em;
      text-align: center;
      /* Color fallback */
@@ -200,7 +200,7 @@
      background-image: url(peaceprocess1.jpg);
      background-size: auto;
      background-size: cover;
-     background-position: top;
+     background-position: bottom;
      max-width: auto;
  }
 
