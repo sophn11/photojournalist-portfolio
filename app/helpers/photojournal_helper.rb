@@ -1,0 +1,2 @@
+module PhotojournalHelper
+end

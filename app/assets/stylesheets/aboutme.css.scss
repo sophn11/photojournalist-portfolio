@@ -6,10 +6,6 @@ body {
   font-weight: 300;
 }
 
-.container {
-  max-width: 800px;
-  margin:10px auto;
-}
 
 .text-center {
   text-align: center;
@@ -65,4 +61,8 @@ body {
     font-size: 22em;
     right: -25px;
   }
+}
+
+.card-img {
+  float: right;
 }

@@ -15,9 +15,7 @@
  *= require 'masonry/transitions'
  *= require_tree .
  */
- body, html {
-     height: 100%;
- }
+
  #wrapper {
      padding-left: 0;
      -webkit-transition: all 0.5s ease;
@@ -26,15 +24,15 @@
      transition: all 0.5s ease;
  }
  #wrapper.toggled {
-     padding-left: 250px;
+     padding-left: 200px;
  }
  #sidebar-wrapper {
      z-index: 1000;
      position: fixed;
-     left: 250px;
+     left: 200px;
      width: 0;
      height: 100%;
-     margin-left: -250px;
+     margin-left: -200px;
      overflow-y: auto;
      overflow-x: auto;
      background-image: url(tex.png);
@@ -44,7 +42,7 @@
      transition: all 0.5s ease;
  }
  #wrapper.toggled #sidebar-wrapper {
-     width: 250px;
+     width: 200px;
  }
  #page-content-wrapper {
      width: 100%;
@@ -53,7 +51,7 @@
  }
  #wrapper.toggled #page-content-wrapper {
      position: absolute;
-     margin-right: -250px;
+     margin-right: -200px;
  }
  .btn-default#menu-toggle, .btn-default#menu-toggle:hover, .btn-default#menu-toggle:focus {
      border: none;
@@ -66,7 +64,7 @@
   .sidebar-nav {
      position: absolute;
      top: 0;
-     width: 250px;
+     width: 200px;
      margin: 0;
      padding: 0;
      list-style: none;
@@ -114,10 +112,10 @@
  }
  @media(min-width:768px) {
      #sidebar-wrapper {
-         width: 250px;
+         width: 200px;
      }
      #wrapper {
-         padding-left: 250px;
+         padding-left: 200px;
      }
      #wrapper.toggled {
          padding-left: 0;
@@ -137,12 +135,12 @@
 
  /* Clip text element */
  .clip-text {
-     font-size: 3.5em;
+     font-size: 3em;
      font-weight: bold;
      line-height: 0;
      position: relative;
-     display: inline-block;
-     margin: .05em;
+     display: block;
+     margin: .01em;
      padding: .5em .5em;
      text-align: center;
      /* Color fallback */
@@ -163,7 +161,7 @@
      z-index: -2;
      top: 0;
      right: 0;
-     bottom: 0;
+     bottom: 2;
      left: 0;
      background-image: inherit;
  }
@@ -196,7 +194,7 @@
              background-size: cover;
  }
 
- h1.clip-text_one{
+.clip-text_one{
      background-image: url(peaceprocess1.jpg);
      background-size: auto;
      background-size: cover;
@@ -204,13 +202,12 @@
      max-width: auto;
  }
 
- h1.clip-p {
-   font-size: 1.5em;
+.clip-p {
+   font-size: 1em;
    color: black;
+   text-align: center;
  }
 
-
- .jumbotron {
-   background-color: white;
-   height: 150px;
+ .fa-bars {
+   color: black;
  }

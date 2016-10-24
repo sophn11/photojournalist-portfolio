@@ -23,10 +23,10 @@ $(document).ready(function() {
       $("#wrapper").toggleClass("toggled");
   });
   $("#owl-demo").owlCarousel({
-    autoPlay : 3000,
+    autoPlay : false,
     stopOnHover : true,
     navigation:true,
-    paginationSpeed : 1000,
+    paginationSpeed : 400,
     goToFirstSpeed : 2000,
     singleItem : true,
     autoHeight : true,
