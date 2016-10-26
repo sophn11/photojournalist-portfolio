@@ -89,9 +89,9 @@
  .sidebar-nav .sidebar-brand {
      text-align: left;
  }
- .sidebar-nav .sidebar-brand img {
-     width: 75px;
- }
+ // .sidebar-nav .sidebar-brand img {
+ //     width: 75px;
+ // }
  .sidebar-nav ul {
      list-style: none;
      list-style-position:outside;
@@ -102,14 +102,18 @@
      font-size: 13px;
  }
  .sidebar-nav ul > li > a {
-     color: #ddd;
+     color: black;
      text-decoration: none;
      padding-left: 10px;
  }
  .sidebar-nav ul > li > a:hover {
-     color: #fff;
+     color: black;
      background: rgba(255, 255, 255, 0.6);
  }
+
+
+
+
  @media(min-width:768px) {
      #sidebar-wrapper {
          width: 200px;
