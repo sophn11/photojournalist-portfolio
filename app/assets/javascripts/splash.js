@@ -2,10 +2,10 @@ $(document).ready(function() {
 
 
 $("#owl-demo").owlCarousel({
-  autoPlay : false,
+  autoPlay : true,
   stopOnHover : true,
   navigation:true,
-  paginationSpeed : 400,
+  paginationSpeed : 200,
   goToFirstSpeed : 2000,
   singleItem : true,
   autoHeight : true,

@@ -15,6 +15,9 @@
  *= require 'masonry/transitions'
  *= require_tree .
  */
+html, #wrapper, #wrapper.toggled, {
+  background-color: #3A4040;
+}
 
  #wrapper {
      padding-left: 0;
@@ -33,13 +36,15 @@
      width: 0;
      height: 100%;
      margin-left: -200px;
+     padding-top: 60px;
      overflow-y: auto;
      overflow-x: auto;
-     background-image: url(tex.png);
      -webkit-transition: all 0.5s ease;
      -moz-transition: all 0.5s ease;
      -o-transition: all 0.5s ease;
      transition: all 0.5s ease;
+     background-color: #BFBFBF;
+     align-content: center;
  }
  #wrapper.toggled #sidebar-wrapper {
      width: 200px;
@@ -49,6 +54,7 @@
      position: absolute;
      padding: 15px;
  }
+
  #wrapper.toggled #page-content-wrapper {
      position: absolute;
      margin-right: -200px;
@@ -72,7 +78,9 @@
  .sidebar-nav li {
      text-indent: 20px;
      line-height: 40px;
- }
+  	position:relative;
+}
+
  .sidebar-nav li a {
      display: block;
      text-decoration: none;
@@ -89,9 +97,7 @@
  .sidebar-nav .sidebar-brand {
      text-align: left;
  }
- // .sidebar-nav .sidebar-brand img {
- //     width: 75px;
- // }
+
  .sidebar-nav ul {
      list-style: none;
      list-style-position:outside;
@@ -111,8 +117,22 @@
      background: rgba(255, 255, 255, 0.6);
  }
 
-
-
+.jumbotron {
+  background-image: url('http://res.cloudinary.com/dkfv3dxyb/image/upload/v1477387861/about%20me/ladiesroom90.jpg');
+  position:fixed;
+  opacity: 0.9;
+  max-width: 100%;
+}
+.luztitle {
+  text-align:right;
+  align-content: center;
+  float: right;
+  margin-right: 10px;
+  font-size: 25px;
+  color: black;
+  text-shadow: 2px;
+  text-decoration: underline;
+}
 
  @media(min-width:768px) {
      #sidebar-wrapper {
@@ -137,82 +157,9 @@
      }
  }
 
- /* Clip text element */
- .clip-text {
-     font-size: 3em;
-     font-weight: bold;
-     line-height: 0;
-     position: relative;
-     display: block;
-     margin: .01em;
-     padding: .5em .5em;
-     text-align: center;
-     /* Color fallback */
-     color: #fff;
-     -webkit-background-clip: text;
-
-     -webkit-text-fill-color: transparent;
- }
-
- .clip-text:before,
- .clip-text:after {
-     position: absolute;
-     content: '';
- }
-
- /* Background */
- .clip-text:before {
-     z-index: -2;
-     top: 0;
-     right: 0;
-     bottom: 2;
-     left: 0;
-     background-image: inherit;
- }
-
- /* Text Background (black zone) */
- .clip-text:after {
-     position: absolute;
-     z-index: -1;
-     top: .5em;
-     right: .125em;
-     bottom: .5em;
-     left: .125em;
-     background-color: #000;
- }
-
- /* Change the background position to display letter when the black zone isn't here */
- .clip-text--no-textzone:before {
-     background-position: -.105em 0;
- }
-
- .clip-text--no-textzone:after {
-     content: none;
- }
-
- /* Use Background-size cover for photo background and no-repeat background */
- .clip-text--cover,
- .clip-text--cover:before {
-     background-repeat: no-repeat;
-     -webkit-background-size: cover;
-             background-size: cover;
- }
-
-.clip-text_one{
-     background-image: url(http://res.cloudinary.com/dkfv3dxyb/image/upload/v1477360466/urban%20scenes/plazadelaiglesiaveracruz82.jpg);
-     background-size: auto;
-     background-size: cover;
-     background-position: bottom;
-     max-width: auto;
- }
-
-.clip-p {
-   font-size: 1em;
-   color: black;
-   text-align: center;
- }
 
 .menu {
-   height: 25px;
-   widows: auto;
+   height: 22px;
+   width: auto;
+   float: left;
  }
