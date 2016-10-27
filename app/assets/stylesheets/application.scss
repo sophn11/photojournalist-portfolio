@@ -49,11 +49,7 @@ html, #wrapper, #wrapper.toggled, {
  #wrapper.toggled #sidebar-wrapper {
      width: 200px;
  }
- #page-content-wrapper {
-     width: 100%;
-     position: absolute;
-     padding: 15px;
- }
+
 
  #wrapper.toggled #page-content-wrapper {
      position: absolute;
@@ -117,17 +113,32 @@ html, #wrapper, #wrapper.toggled, {
      background: rgba(255, 255, 255, 0.6);
  }
 
-.jumbotron {
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+}
+.container{
+  display: block;
+  width: 100%;
+}
+.jumbotron-fluid {
+  left: 0;
+  right: 0;
+  top:0;
   background-image: url('http://res.cloudinary.com/dkfv3dxyb/image/upload/v1477387861/about%20me/ladiesroom90.jpg');
   position:fixed;
   opacity: 0.9;
-  max-width: 100%;
+  display: block;
+  z-index: 1;
+  width:inherit;
+}
+#page-yield{
+  position: relative;
 }
 .luztitle {
+  position: relative;
   text-align:right;
   align-content: center;
-  float: right;
-  margin-right: 10px;
   font-size: 25px;
   color: black;
   text-shadow: 2px;
@@ -161,5 +172,4 @@ html, #wrapper, #wrapper.toggled, {
 .menu {
    height: 22px;
    width: auto;
-   float: left;
  }
