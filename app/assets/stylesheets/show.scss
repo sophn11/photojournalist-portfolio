@@ -5,13 +5,22 @@
 
 .container-fluid {
   font-family: 'Lato', sans-serif;
+  top: 0;
 }
 
 img.show-img {
   max-height: 660px;
   width: auto;
+  position: relative;
+  margin: auto;
+  top: 0;
 }
 
 .panel {
   text-align: center;
+}
+
+p {
+  text-align: justify;
+  margin: 20px;
 }

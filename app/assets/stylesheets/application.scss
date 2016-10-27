@@ -131,6 +131,7 @@ html, #wrapper, #wrapper.toggled, {
   left: 0;
   right: 0;
   top:0;
+  bottom:0;
   background-image: url('http://res.cloudinary.com/dkfv3dxyb/image/upload/v1477387861/about%20me/ladiesroom90.jpg');
   position:fixed;
   opacity: 0.9;
@@ -138,6 +139,7 @@ html, #wrapper, #wrapper.toggled, {
   z-index: 1;
   width:inherit;
   font-family: 'Archivo Narrow', sans-serif;
+  height: 100px;
 
 }
 #page-yield{
