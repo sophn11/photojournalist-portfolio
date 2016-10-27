@@ -17,7 +17,7 @@
 //= require turbolinks
 //= require_tree .
 
-$(document).on('ready page:change', function(e) {
+$(document).on('turbolinks:load', function(e) {
   $("#menu-toggle").click(function (e) {
     e.preventDefault();
       $("#wrapper").toggleClass("toggled");

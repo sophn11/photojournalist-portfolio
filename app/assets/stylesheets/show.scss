@@ -1,3 +1,17 @@
 // Place all the styles related to the show controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow|Lato');
+
+.container-fluid {
+  font-family: 'Lato', sans-serif;
+}
+
+img.show-img {
+  max-height: 660px;
+  width: auto;
+}
+
+.panel {
+  text-align: center;
+}

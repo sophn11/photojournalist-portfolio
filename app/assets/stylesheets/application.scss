@@ -15,11 +15,7 @@
  *= require 'masonry/transitions'
  *= require_tree .
  */
-@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow');
-
-html {
-  font-family: 'Archivo Narrow', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow|Lato');
 
 html, #wrapper, #wrapper.toggled, {
   background-color: #3A4040;
@@ -51,6 +47,8 @@ html, #wrapper, #wrapper.toggled, {
      transition: all 0.5s ease;
      background-color: #BFBFBF;
      align-content: center;
+     font-family: 'Archivo Narrow', sans-serif;
+
  }
  #wrapper.toggled #sidebar-wrapper {
      width: 200px;
