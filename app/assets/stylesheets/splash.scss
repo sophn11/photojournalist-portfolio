@@ -4,10 +4,27 @@
 }
 #owl-demo .owl-item img{
   display: block;
-  width: auto;
-  height: 700px;
-  top:0;
+  max-width: auto;
+  max-height: 730px;
+  padding-top: 30px;
   left:0;
   right:0;
+
+}
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    #owl-demo .owl-item img{
+      display: block;
+      width: auto;
+      height: 580px;
+      padding-top: 120px;
+      left:0;
+      right:0;
+
+    }
 
 }

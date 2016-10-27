@@ -20,5 +20,14 @@ Rails.application.routes.draw do
   get '/cyclists', to: 'photojournal#cyclistsindex'
   get '/pick', to: 'photojournal#pickindex'
 
+  get '/retrospective', to: 'exhibits#retrospective'
+  get '/infrarojo', to: 'exhibits#infrarojo'
+  get '/lejos', to: 'exhibits#lejos'
+  get '/bwb', to: 'exhibits#bwb'
+  get '/faces', to: 'exhibits#faces'
+  get '/old', to: 'exhibits#old'
+  get '/recyclers', to: 'exhibits#recyclers'
+  get '/cesar', to: 'exhibits#cesar'
+
 
 end
