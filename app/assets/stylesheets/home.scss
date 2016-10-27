@@ -1,18 +1,27 @@
 @charset "UTF-8";
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,200italic);
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow|Lato');
 body {
   background: #eee;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 300;
 }
 
 img.luz {
+  height: 250px;
   width: auto;
+  float: left;
+  padding-left: 15px;
+  padding-right: 25px;
+  padding-bottom: 15px;
+}
+h3 {
+  bottom:0;
 }
 
-p {
-  margin: 25px;
-  font-size: 19px;
+.hometext {
+  top:0;
+  margin-left: 25px;
+  margin-right: 25px;
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
 }
 
 .text-center {
@@ -31,16 +40,15 @@ p {
   min-height: 120px;
 }
 .quote-card p {
-  font-size: 22px;
+  font-size: 30px;
   line-height: 1.5;
   margin: 0;
   max-width: 80%;
 }
 .quote-card cite {
   font-size: 16px;
-  margin-top: 10px;
+  margin-top: 20px;
   display: block;
-  font-weight: 200;
   opacity: 0.8;
 }
 .quote-card:before {
