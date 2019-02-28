@@ -1,24 +1,16 @@
-# README
+# Photojournalist Template
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Portfolio for photojournalists using ruby on rails framework.
 
-Things you may want to cover:
+* Welcome Page Carousel
+* Responsive Grid
 
-* Ruby version
+![about](about.png)
 
-* System dependencies
+![photo gallery](gallery.png)
 
-* Configuration
+* Provided a showcase page for each photo in awards
 
-* Database creation
+![photo details](dialogos.png)
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![photo gallery 2](caras.png)
