@@ -7,7 +7,7 @@ Portfolio for photojournalists using ruby on rails framework.
 
 ![about](about.png)
 
-![photo gallery](gallery.png)
+![photo gallery](home.png)
 
 * Provided a showcase page for each photo in awards
 
