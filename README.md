@@ -5,4 +5,4 @@ Portfolio for photojournalists using ruby on rails framework.
 * Welcome Page Carousel
 * Responsive Grid
 
-![about](about.png)
+![home](home.png)
