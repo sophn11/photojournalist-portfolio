@@ -9,4 +9,4 @@ Portfolio for photojournalists using ruby on rails framework.
 
 ![home](home.png)
 
-* local only
+- local only *
