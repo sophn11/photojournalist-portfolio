@@ -8,3 +8,5 @@ Portfolio for photojournalists using ruby on rails framework.
 * Exibition Features
 
 ![home](home.png)
+
+* local only
